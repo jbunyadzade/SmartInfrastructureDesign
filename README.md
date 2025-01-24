@@ -14,6 +14,8 @@ Notify your team mates which task you're working on to avoid duplication of work
 
 For diagrams use [draw.io](https://app.diagrams.net/) to create them. It's best to export them as `.drawio` files and commit them to the repo. This way, they can be edited later if needed.
 
+Do not edit existing diagrams without consulting the team first. Conflicting changes can be difficult to resolve. It's best to create a new diagram if you need to make changes.
+
 ## Documentation
 
 For documentation, use Markdown files.
