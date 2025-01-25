@@ -28,7 +28,7 @@ VSCode allows you to preview Markdown files as well. Just open the file and pres
 
 ## Links
 
--   [Project's technical description](https://docs.google.com/document/d/1pj-9AszYmXxnL11g8HGA9FzRwf7cPLE22sZ1j8JAXgg/edit?usp=sharing)
+-   [Project's technical description](technical_description.md)
 -   [Tasks](tasks.md)
 -   [Endpoints](endpoints/README.md)
 -   [Breakdown Diagrams](breakdown_diagrams/README.md)
