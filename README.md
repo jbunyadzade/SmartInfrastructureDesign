@@ -26,10 +26,17 @@ If you're not familiar with Markdown, you can use [StackEdit](https://stackedit.
 
 VSCode allows you to preview Markdown files as well. Just open the file and press `Ctrl + Shift + V` to see the preview.
 
+## Modules
+
+Add new modules as needed. Each module should have its own folder with separate documentation files.
+List of existing modules:
+
+-   [Performance Monitoring](performance_monitoring/performance_monitoring.md)
+-   [OAuth2](oauth2/oauth2.md)
+
 ## Links
 
 -   [Project's technical description](technical_description.md)
 -   [Tasks](tasks.md)
--   [Endpoints](endpoints/README.md)
--   [Breakdown Diagrams](breakdown_diagrams/README.md)
 -   [Questions (and answers)](questions.md)
+-   [Sample module](sample_module/sample_module.md)
