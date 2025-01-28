@@ -8,7 +8,7 @@
           <mxGeometry x="-210" y="545" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Ek_r109Na2GJmbcFJiNA-7" value="&lt;div&gt;&lt;b&gt;CDN&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FE app static files&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="180" y="170" width="80" height="80" as="geometry" />
+          <mxGeometry x="140" y="230" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="yACf0CrbT-HV-bRWLfDn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="yACf0CrbT-HV-bRWLfDn-11">
           <mxGeometry relative="1" as="geometry" />
@@ -169,13 +169,13 @@
         <mxCell id="QX9uLB6ceYBl45-aGuLl-2" value="&lt;div&gt;Prometheus&lt;/div&gt;&lt;div&gt;(see monitoring module)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="233.5" y="750" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="yACf0CrbT-HV-bRWLfDn-1" value="&lt;div&gt;We expect the sensors to be active all the time.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Let&#39;s assume a polling rate of 1 request / second.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-1" value="&lt;div&gt;We expect the sensors to be active all the time.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Let&#39;s assume a polling rate of 1 request / minute.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-500" y="580" width="280" height="90" as="geometry" />
         </mxCell>
         <mxCell id="yACf0CrbT-HV-bRWLfDn-2" value="&lt;div&gt;The Load Balancer can support up to 1 million active&lt;/div&gt;&lt;div&gt;connections simultaneously - so just 1 LB is enough&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-500" y="720" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="yACf0CrbT-HV-bRWLfDn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yACf0CrbT-HV-bRWLfDn-4" target="Ek_r109Na2GJmbcFJiNA-7">
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yACf0CrbT-HV-bRWLfDn-4" target="Ek_r109Na2GJmbcFJiNA-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="yACf0CrbT-HV-bRWLfDn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="yACf0CrbT-HV-bRWLfDn-4" target="Ek_r109Na2GJmbcFJiNA-92">
@@ -195,6 +195,9 @@
         </mxCell>
         <mxCell id="yACf0CrbT-HV-bRWLfDn-11" value="&lt;b&gt;Policy server&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="449" y="-410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-13" value="&lt;div&gt;We have a limitation of 32 GB of RAM per node.&lt;/div&gt;&lt;div&gt;We assume that we use 30 MB of RAM per request.&lt;/div&gt;&lt;div&gt;That means - to process all requests simultaneously we need&lt;/div&gt;&lt;div&gt;30MB * 1 Million RAM&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Which is 30000000 MB or 30 000 GB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;That means we need 30 000 / 32 nodes, which is roughly 938 nodes???&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="775" width="410" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
