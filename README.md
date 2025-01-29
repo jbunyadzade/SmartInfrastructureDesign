@@ -31,3 +31,9 @@ A fleet of "Data-churning" workers then processes the data, generating reports, 
 There is also a dedicated [Maintenance scheduler](maintenance_scheduler/maintenance_scheduler.md), which queries the reports from the [Reports Database](dashboard_app/database_schema.md) send notifications to the users via the [Notification System](notifications/notifications.md).
 
 The [Dashboard App](dashboard_app/dashboard_app.md) is the user-facing part of the API. It queries the [Reports Database](dashboard_app/database_schema.md) to display the latest data and alerts to the users.
+
+## Diagram
+
+Link to draw.io diagram: [Smart Infrastructure Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=main.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fmain.drawio)
+
+![Main Diagram](main.png)
