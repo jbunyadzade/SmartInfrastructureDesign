@@ -69,3 +69,6 @@ The workers operate in a **scheduled, pull-based** manner, periodically querying
 
 ## **Diagram**
 
+Link to draw.io diagram: [Data Churning Workers]()
+
+![Data Churning Workers](data_churners_diagram.png)

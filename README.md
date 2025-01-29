@@ -6,6 +6,8 @@ Repo containing diagrams and documentation for the Smart Infrastructure Manageme
 
 The Smart Infrastructure Management System is a comprehensive solution for monitoring and managing critical infrastructure elements such as bridges, roads, pipelines, and dams. The system leverages IoT sensors, real-time data processing, and predictive analytics to ensure the safety, reliability, and longevity of these structures.
 
+The requirements document can be found [here](REQUIREMENTS.md).
+
 ## Modules
 
 1. [Sensor Input App](sensor_input/sensor_input.md)
