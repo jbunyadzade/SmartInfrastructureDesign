@@ -1,58 +1,61 @@
 # Authentication and Authorization of Sensor
 
-This document explains the authentication and authorization process for a sensor in a system.
+This sequence diagram represents a communication process involving a **Sensor**, a **Load Balancer**, and a **Resource Server**. The process primarily focuses on secure communication through a TLS handshake and subsequent HTTPS requests.
+
+**Transport Layer Security (TLS)** is a cryptographic protocol that ensures secure communication over a network. It provides:
+- **Encryption** – Protects data from being intercepted.
+- **Authentication** – Verifies the identity of parties involved.
+- **Data Integrity** – Ensures data is not altered during transmission.
 
 ---
 
-## **1. Sensor Provides Credentials (Authentication Step)**
-- The **sensor** (IoT device) sends its credentials to the **Authentication System** for verification.
-- **Credentials may include:**
-  - **Device ID**: A unique identifier for the sensor.
-  - **API Key**: A pre-issued key used to authenticate the sensor.
-  - **Client Certificate**: Used in mutual TLS authentication.
-  - **JSON Web Token (JWT) Refresh Token**: If the sensor is using OAuth2-based authentication.
+## **Actors in the Diagram**
+1. **Sensor** – The source of the communication, initiating secure transmission.
+2. **Load Balancer** – Handles certificate validation and forwards HTTPS requests.
+3. **Resource Server** – The destination server processing the requests.
 
 ---
 
-## **2. Authentication System Verifies Credentials**
-- The authentication system checks the provided credentials against an **authentication service**.
-- If the credentials are **valid**, the system issues an **Access Token** to the sensor.
+## **Step-by-Step Process**
+
+### **1. Sensor Sends Sensor Certificate**
+- The **Sensor** initiates a **TLS handshake** by sending its **certificate** to the **Load Balancer**.
+- This step is crucial for establishing a secure connection.
+
+### **2. Load Balancer Validates Sensor Certificate**
+- The **Load Balancer** checks the received **Sensor Certificate** to confirm its authenticity.
+- If the certificate is valid, the connection continues.
+
+### **3. TLS Handshake Completion**
+- Once the certificate validation is successful, the **TLS handshake** is **finished**.
+- The connection is now **encrypted** and ready for secure communication.
+
+### **4. Sensor Sends HTTPS Request**
+- After securing the connection, the **Sensor** sends an **HTTPS request** to the **Load Balancer**.
+- This request could be for **data transmission**, **authentication**, or other purposes.
+
+### **5. Load Balancer Forwards HTTPS Request**
+- The **Load Balancer** forwards the **HTTPS request** to the **Resource Server**.
+- This step ensures that traffic is balanced across multiple servers if necessary.
+
+### **6. Resource Server Processes the Request and Sends a Response**
+- The **Resource Server** processes the request and **sends a response** back to the **Load Balancer**.
+
+### **7. Load Balancer Sends Response to Sensor**
+- Finally, the **Load Balancer** forwards the **response** back to the **Sensor**.
+- The communication cycle is now complete.
 
 ---
 
-## **3. What is in the Access Token?**
-The **Access Token** is a digitally signed token used for **Authorization**. It typically contains:
-
-- **Sensor ID**: Identifies the sensor that made the request.
-- **Expiration Time**: Defines when the token becomes invalid.
-- **Permissions/Scopes**: Lists the actions the sensor is allowed to perform.
-- **Issuer Information**: Identifies the authentication system that issued the token.
-- **Signature**: A cryptographic signature to prevent tampering.
-
----
-
-## **4. Authorization Step**
-- The **Authorization System** checks whether the authenticated sensor has the necessary permissions to access specific resources.
-- It validates the **Access Token** and checks **permissions** based on roles or access control lists (ACLs).
-
----
-
-## **5. Resource Access**
-- If authorization is **successful**, the sensor is granted access to the requested resources.
-- If authorization **fails**, a `403 Forbidden` response is returned.
-
----
-
-## **6. Summary**
-- **Credentials** are used for authentication.
-- If valid, an **Access Token** is issued.
-- The **Access Token** contains the sensor's identity, permissions, and expiration.
-- Authorization determines if the sensor has permission to access resources.
-
+## **Summary**
+- The **Sensor** initiates communication with a **secure TLS handshake**.
+- The **Load Balancer** ensures **authentication** and forwards requests.
+- The **Resource Server** processes requests and sends responses.
+- This sequence ensures a **secure**, **validated**, and **load-balanced** transmission between the **Sensor** and **Resource Server**.
 ---
 
 ## **Diagram**
 
-Link to draw.io diagram: [Sensor Auth Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sensor_auth.drawio#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22mMZeZgjikk1Z3pZBnvqS%22%3E1VjLctowFP0alunIEgZ7mZCUTGc6Q0sfyaqj2jdYxUiMLF75%2BkpYxlbVBDoBQ1e2jq6kq3OOHnaHDGbroaTz7KNIIe9glK475LaDcYBCpB8G2ZRIaEoGmEiW2qAaGLNnqFpadMFSKJxAJUSu2NwFE8E5JMrBqJRi5YY9idwddU4n4AHjhOY%2B%2Bp2lKivRqJqWwe%2BBTbJq5ADZmhmtgi1QZDQVqwZE7jpkIIVQ5dtsPYDckFfxUrZ7%2F0LtLjEJXB3S4EN2H08nX3%2F1JB1nPz5NyVX%2BdBWVvSxpvrATHgMvhLQpq03FwypjCsZzmpjySmvdITeFkmK6o0VP6MbPyaa5BKlg3YBsjkMQM1Byo0NsLYksX9YwOLKGWdX0B6hXYlmD%2BrBrVbeKT3Zd16ToF8vLP3AUexxdL1SmZ8gSqpjgum68KRTMzkcaRl2HtC6KPNJ23bZCWrV%2BG6wNgYOkSq9mjK6TBArz8kWTwc9JnOu2kIQ%2BcQS1SVzgEWfsJiR7vhy3xQ5pPRL7pAW4TdKwR9pnKMRCai5qs51tS%2Bv2HL76Pd9kQT9sky%2Fi8TWSYrk9ajEaSEjN9kZzn7RkIZdgug62bFGprs0pqwEuuI65AZ5WyM9cJFMDrZl60GX0DhFbfLQ96GHkpqwLq%2BJjGWqqpVjwdDscek0Kq%2FTeY06nOwG1f6uH1LkU%2BMJKyPViXLp3hL%2BptG2q%2BaCbRsBcMK6KRs8jAzT8EoSOX0gf%2F6F42WOt%2Fy61N1ii61niG81Zajfs03kibFqilP1FVxzREvGBlqgOstY84SzsYwgbesKeUsGW5Ktk2a9f8L%2Fr1%2FP0G2SQTM2qHIGcsaLQ14KTrkpXUxycTNTgUFHxRW7UfRy3sFH3PT%2Fob%2B9tnsh8uKFb4My5ZB%2FVGP244QzkOiOOms445gFeCb7XGdFFGCMM8WvG2Bv%2FxhNfF%2Bv%2FCmV4%2FXeG3P0G%3C%2Fdiagram%3E%3C%2Fmxfile%3E)
+Link to draw.io diagram: [Sensor Auth Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sensor_auth.drawio#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22mMZeZgjikk1Z3pZBnvqS%22%3E7ZnbbuIwEIafBmn3olXOgUugJ62o1C1o93LlEpdYNXHqOAT26XdMnITEAQotq0qlN3V%2Bz4wdzxd7Ejr2cL685SgO71mAaccygmXHvupYlmmbNvyTyipXLkzX8XNpxkmgzCphTP5iJRpKTUmAk5qhYIwKEtfFKYsiPBU1DXHOsrrZM6P1UWM0w5owniKqq79JIMJc7bpGpd9hMguLkU1D9cxRYayEJEQByzYk%2B7pjDzljIm%2FNl0NM5fIV65L73WzpLSfGcSTe4vCD%2F1k594Iv7n52aW%2F0yN3%2B6KKnsrFANFV3PMZRwrias1gVCwHTj2UzndMRecaURHA1iDEncywwhx6q5IdKG2QhEXgco6l0zQAS0CBVAoGd9DHhOuAsniA%2Bw%2FI2jLUBpShOyNN6bKlwPE15Qhb4ESc5IlJlqZDjDcvUSzFmXICSCA5jSBGjRGQ4geYgwtl1AOkt7sofdCzvNZUZGOCyo5Q6dn%2Bjnz6xDe%2FKyBo2jLYEWGAuCIC1xRVucIGDmq9RM%2BAsjQLNwr%2BClloTz10HbWKhSJHj4%2BWGpDC5xQyyxVdgonoLYtVDa9kF01n1BJjFExBu0O8Vnkg9dbMydgUmNBSbh3Da1TgdMQSLYQwQRdEUn4H9wsA6pvv5iO1pxAILLOVAlmWMMSzemdkvzKznOp%2BOWdOw28qBIFkTm5cFxlAu8TMsssAav8Xy9ymZRSA9MSHYvJZ4YKWe5CKh9lWZvDJRCkyVlPwK5tOXhZ0MT9n0ZVc65LA7k8ExRQKQr9eNLeu6doVx0WrDIGZAf7IR%2BUEKVY5tw6zn2KnXaNDIQ7a795xLyzXKP8tuD1ZOJ99dVJDNSrAR1%2Bn2Lt09scR6r9BirbEq1%2B89pDkaab8QJQFQ9WbaSkjMdizq3HxWSFynCYnv7Eyf5uAaTuftVMns17BqH%2F0oqnbELSb5%2FwhzNcJuSESSUG7vxrfJaCz3VQS7W4he8PoVch5TOFK%2Fn7e1fdta4%2Bhy3e6BALrtAQ6Gbs8WqcU9OXTe1gP0bjJ5kMg94tdUVkpnyA47Oz3T%2Brizswj2EWenFuvkkOkfbW4YzxAPzpgdiplndhvZ9LyPO0yLYAdj5ltdDbNmrJNjpn9zgTfDGF77zoX%2FPqqsxublH1T4t2Tff0%2Bxv4NQLe7JqWr9LnKm6pi6y%2FcPLfybVB1b7O85XrW4R1MFl9VPJLl59VOTff0P%3C%2Fdiagram%3E%3C%2Fmxfile%3E)
 
 ![Sensor Auth Diagram](sensor_auth.png)
