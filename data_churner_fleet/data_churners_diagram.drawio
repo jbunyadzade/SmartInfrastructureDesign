@@ -1,9 +1,54 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
   <diagram name="Page-1" id="WY3KefUxAKrFzTt01rEi">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-1" value="Worker System" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="48" y="325" width="533" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-2" value="Data Sources" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="619" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-3" value="InfluxDB: Raw Sensor Data" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="206" y="45" width="249" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-4" value="Anomaly Detection Worker" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="173" width="251" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-5" value="Report Generation Worker" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="356" y="173" width="248" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-6" value="NotificationSystem" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="83" y="350" width="195" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-7" value="ReportsDB" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="414" y="350" width="133" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-8" value="Queries" style="curved=1;startArrow=none;endArrow=block;exitX=0.24;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="0vyF1qs02JVkrmHbVHz_-3" target="0vyF1qs02JVkrmHbVHz_-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="181" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-9" value="Queries" style="curved=1;startArrow=none;endArrow=block;exitX=0.75;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="0vyF1qs02JVkrmHbVHz_-3" target="0vyF1qs02JVkrmHbVHz_-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-10" value="Triggers Alerts" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="0vyF1qs02JVkrmHbVHz_-4" target="0vyF1qs02JVkrmHbVHz_-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0vyF1qs02JVkrmHbVHz_-11" value="Stores Reports" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="0vyF1qs02JVkrmHbVHz_-5" target="0vyF1qs02JVkrmHbVHz_-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
