@@ -7,9 +7,10 @@ The **Sensor Input Time-Series Database (TSDB)** is designed to handle **high-ve
 ## **Choosing the Right Time-Series Database**
 
 For a **high-ingestion, low-latency** workload, the ideal TSDB should:
-✅ Handle **millions of writes per second**.  
-✅ Support **efficient queries on time-based data**.  
-✅ Scale **horizontally** as sensor count increases.
+
+-   Handle **millions of writes per second**.
+-   Support **efficient queries on time-based data**.
+-   Scale **horizontally** as sensor count increases.
 
 🔹 **Recommended TSDBs:**
 
@@ -20,11 +21,12 @@ For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 | **VictoriaMetrics**                    | Cloud-native, multi-tenant                 | ~1,000,000+       | Yes                     |
 | **ClickHouse**                         | Fast analytical queries                    | ~500,000          | Yes                     |
 
-🚀 **Choice: InfluxDB**  
-✅ **Fast writes (~500K TPS per node)**  
-✅ **Optimized for IoT sensor workloads**  
-✅ **Efficient time-based queries**  
-✅ **Retention policies** reduce storage costs
+**Choice: InfluxDB**
+
+-   **Fast writes (~500K TPS per node)**
+-   **Optimized for IoT sensor workloads**
+-   **Efficient time-based queries**
+-   **Retention policies** reduce storage costs
 
 ---
 
@@ -105,18 +107,18 @@ $$
 | **VictoriaMetrics** | ~1,000,000+          | **No (1 Node is enough)** |
 | **TimescaleDB**     | ~100,000             | **Yes (2 Nodes Needed)**  |
 
-✅ **InfluxDB with 1-2 nodes is sufficient** 🚀  
-✅ **Add more nodes if ingestion rates exceed 500K TPS**
+-   **InfluxDB with 1-2 nodes is sufficient** 🚀
+-   **Add more nodes if ingestion rates exceed 500K TPS**
 
 ---
 
 ## **Summary of Design**
 
-✅ **InfluxDB chosen for high write performance (~500K TPS per node).**  
-✅ **Sharded by region & time to balance write load.**  
-✅ **Replication with 2 read replicas per shard for fast dashboard queries.**  
-✅ **Downsampling & retention policies reduce storage overhead.**  
-✅ **1 node can handle current load, scale to 2+ nodes if needed.**
+-   **InfluxDB chosen for high write performance (~500K TPS per node).**
+-   **Sharded by region & time to balance write load.**
+-   **Replication with 2 read replicas per shard for fast dashboard queries.**
+-   **Downsampling & retention policies reduce storage overhead.**
+-   **1 node can handle current load, scale to 2+ nodes if needed.**
 
 ## **Diagram**
 
