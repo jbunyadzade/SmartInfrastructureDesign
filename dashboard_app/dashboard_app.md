@@ -2,6 +2,12 @@
 
 The **Dashboard App** is a key component of the **Smart Infrastructure Management System**, providing a user interface for monitoring, analyzing, and managing infrastructure health. It enables engineers, planners, and administrators to view sensor data, track infrastructure performance, and receive alerts on anomalies or failures. The app integrates with the **Sensor Input App**, **Prometheus**, and the **Notification System** to provide actionable insights through visual dashboards.
 
+## **Diagram**
+
+Link to drawio diagram: [Dashboard App Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=dashboard_app.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fdashboard-app%2Fdashboard_app%2Fdashboard_app.drawio)
+
+![Dashboard App Diagram](dashboard_app.png)
+
 ---
 
 ## **Endpoints**
@@ -120,12 +126,6 @@ This endpoint retrieves a list of active alerts affecting infrastructure compone
     ]
 }
 ```
-
----
-
-## **Diagrams**
-
-Add `.drawio` diagrams here to visualize the **Dashboard App** architecture, data flow, and its interaction with the **Sensor Input App**, **Prometheus**, and **Notification System**.
 
 ---
 
