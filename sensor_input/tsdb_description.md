@@ -4,7 +4,7 @@ The **Sensor Input Time-Series Database (TSDB)** is designed to handle **high-ve
 
 ---
 
-## **1. Choosing the Right Time-Series Database**
+## **Choosing the Right Time-Series Database**
 
 For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 ✅ Handle **millions of writes per second**.  
@@ -28,7 +28,7 @@ For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 
 ---
 
-## **2. Database Schema**
+## **Database Schema**
 
 ### **`sensor_readings` Table (Main Time-Series Storage)**
 
@@ -48,7 +48,7 @@ For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 
 ---
 
-## **3. Performance Optimization Strategies**
+## **Performance Optimization Strategies**
 
 ### **A. Write Optimization (High TPS)**
 
@@ -69,7 +69,7 @@ For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 
 ---
 
-## **4. Scaling Strategy**
+## **Scaling Strategy**
 
 ### **Sharding Approach**
 
@@ -89,7 +89,7 @@ For a **high-ingestion, low-latency** workload, the ideal TSDB should:
 
 ---
 
-## **5. Estimating TPS Limits**
+## **Estimating TPS Limits**
 
 🔍 **Assumption: 1M Sensors, 1 reading/min per sensor**
 
@@ -110,45 +110,7 @@ $$
 
 ---
 
-## **6. Final Architecture**
-
-```mermaid
-graph TD
-
-    subgraph Data Ingestion
-        SensorInputApp[Sensor Input App] -->|Writes Data| TSDBRouter[Time-Series Router]
-    end
-
-    subgraph Time-Series Database Cluster
-        TSDBRouter -->|Route Data| Shard1_Primary[Shard One Primary]
-        TSDBRouter -->|Route Data| Shard2_Primary[Shard Two Primary]
-
-        Shard1_Primary -->|Replicates To| Shard1_Replica1[Shard One Read Replica]
-        Shard1_Primary -->|Replicates To| Shard1_Replica2[Shard One Standby]
-
-        Shard2_Primary -->|Replicates To| Shard2_Replica1[Shard Two Read Replica]
-        Shard2_Primary -->|Replicates To| Shard2_Replica2[Shard Two Standby]
-    end
-
-    subgraph Read Queries
-        DashboardAPI[Dashboard API] -->|Query| Shard1_Replica1
-        DashboardAPI -->|Query| Shard2_Replica1
-    end
-
-    style SensorInputApp fill:#cfc,stroke:#333,stroke-width:2px
-    style TSDBRouter fill:#f99,stroke:#333,stroke-width:2px
-    style Shard1_Primary fill:#fcc,stroke:#333,stroke-width:2px
-    style Shard2_Primary fill:#fcc,stroke:#333,stroke-width:2px
-    style Shard1_Replica1 fill:#bbf,stroke:#333,stroke-width:2px
-    style Shard1_Replica2 fill:#bbf,stroke:#333,stroke-width:2px
-    style Shard2_Replica1 fill:#bbf,stroke:#333,stroke-width:2px
-    style Shard2_Replica2 fill:#bbf,stroke:#333,stroke-width:2px
-    style DashboardAPI fill:#bbf,stroke:#333,stroke-width:2px
-```
-
----
-
-## **7. Summary of Design**
+## **Summary of Design**
 
 ✅ **InfluxDB chosen for high write performance (~500K TPS per node).**  
 ✅ **Sharded by region & time to balance write load.**  
@@ -156,4 +118,8 @@ graph TD
 ✅ **Downsampling & retention policies reduce storage overhead.**  
 ✅ **1 node can handle current load, scale to 2+ nodes if needed.**
 
-Would you like to add **alerting mechanisms** for detecting anomalies in time-series data? 🚀
+## **Diagram**
+
+Link to draw.io diagram: [Sensor Input Time-Series Database Design](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=tsdb_diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fsensor-input-module%2Fsensor_input%2Ftsdb_diagram.drawio)
+
+![Sensor Input Time-Series Database Design](tsdb_diagram.png)
