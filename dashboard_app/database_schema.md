@@ -119,6 +119,10 @@ Even though reports are **per structure**, we still track which **sensors** cont
 
 For tracking **notifications** sent to users about alerts and maintenance updates. For schema details, refer to the [Notifications System description](/notifications/notifications.md).
 
+## **7. `maintenance_tasks` Table**
+
+For tracking **scheduled maintenance activities**. For schema details, refer to the [Maintenance Scheduler description](/maintenance_scheduler/maintenance_scheduler.md).
+
 ---
 
 # **Scaling and Performance**

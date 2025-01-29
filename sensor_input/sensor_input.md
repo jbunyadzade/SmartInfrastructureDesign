@@ -2,6 +2,8 @@
 
 The Sensor Input App is a core component of the Smart Infrastructure Management System. It is responsible for ingesting real-time data from IoT sensors deployed across the infrastructure. The app validates incoming data, pushes it to a buffer queue, ensures fault tolerance through retry mechanisms, and supports real-time monitoring of individual sensors through a WebSocket-based streaming service. It also exposes metrics for monitoring and alerting.
 
+It also includes the [Time-series Database](tsdb_description.md) for storing sensor data.
+
 ---
 
 ## **Endpoints**
@@ -133,8 +135,8 @@ We estimate the performance requirements for the Sensor Input App based on the f
 
 1. **Data Ingestion Rate**: The system needs to handle data from 1 million IoT sensors at an average rate of 1 request/sensor/minute.
 
-    Sensor Input App is an Event-loop based server, whose main purpose is to pass on the messages from Sensors to the Raw Data DBs. This means that our RAM requirements per request are miniscule (approx. 2-4 KBs based on the request shape). 
-    
+    Sensor Input App is an Event-loop based server, whose main purpose is to pass on the messages from Sensors to the Raw Data DBs. This means that our RAM requirements per request are miniscule (approx. 2-4 KBs based on the request shape).
+
     In the worst case scenario - all sensors will send data at the same time. That would mean a peak RAM usage purely for requests of ~4GB. Adding up the overheads for running the system, monitoring etc., we can estimate of 5GB as adequate for this node. Let's make it 8 GB, just as a precaution.
 
 2. **Request Latency**: The system should process incoming data with a latency of less than 300ms.

@@ -2,41 +2,19 @@
 
 ## Introduction
 
-Repo containing diagrams and documentation for the smart infrastructure design project.
+Repo containing diagrams and documentation for the Smart Infrastructure Management System project.
 
-## Contributing
+The Smart Infrastructure Management System is a comprehensive solution for monitoring and managing critical infrastructure elements such as bridges, roads, pipelines, and dams. The system leverages IoT sensors, real-time data processing, and predictive analytics to ensure the safety, reliability, and longevity of these structures.
 
-Select a task from the [tasks](tasks.md) list and create a new branch to work on it. When you're done, create a pull request to merge your changes into the `main` branch.
+## System Overview
 
-Notify your team mates which task you're working on to avoid duplication of work.
+In general, the system can be divided into 2 major parts:
 
-## Diagrams
+1. Sensor Data Ingestion and Processing
+2. Delivering reports and notifications to relevant stakeholders
 
-For diagrams use [draw.io](https://app.diagrams.net/) to create them. It's best to export them as `.drawio` files and commit them to the repo. This way, they can be edited later if needed.
+The Sensor Data enters the system via the [Sensor Input App](sensor_input/sensor_input.md), which is responsible for ingesting and storing the data in the [Time-series DB](/sensor_input/tsdb_description.md).
 
-Do not edit existing diagrams without consulting the team first. Conflicting changes can be difficult to resolve. It's best to create a new diagram if you need to make changes.
+A fleet of "Data-churning" workers then processes the data, generating reports, maintenance schedules and storing them in the [Reports Database](dashboard_app/database_schema.md). They also proactively analyze the latest incoming data to detect anomalies and, if necessary, send notifications to the users via the [Notification System](notifications/notifications.md).
 
-## Documentation
-
-For documentation, use Markdown files.
-
-Here's a Markdown cheat sheet to help you format your text: [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/). It should be pretty straightforward to use and sample files are provided in the repo.
-
-If you're not familiar with Markdown, you can use [StackEdit](https://stackedit.io/) to write your documentation. It's a web-based Markdown editor that allows you to preview your text as you write it.
-
-VSCode allows you to preview Markdown files as well. Just open the file and press `Ctrl + Shift + V` to see the preview.
-
-## Modules
-
-Add new modules as needed. Each module should have its own folder with separate documentation files.
-List of existing modules:
-
--   [Performance Monitoring](performance_monitoring/performance_monitoring.md)
--   [OAuth2](oauth2/oauth2.md)
-
-## Links
-
--   [Project's technical description](technical_description.md)
--   [Tasks](tasks.md)
--   [Questions (and answers)](questions.md)
--   [Sample module](sample_module/sample_module.md)
+There is also a dedicated Maintenance scheduler, which queries the reports from the [Reports Database](dashboard_app/database_schema.md) send notifications to the users via the [Notification System](notifications/notifications.md).
