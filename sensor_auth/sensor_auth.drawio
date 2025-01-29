@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.10">
+  <diagram name="Page-1" id="mMZeZgjikk1Z3pZBnvqS">
+    <mxGraphModel dx="1750" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-8" value="Sensor" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380" y="282" width="106" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-9" value="Authentication System" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="204" y="408" width="221" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-10" value="Generates Access Token" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="535" width="230" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-11" value="Authorization System" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="209" y="639" width="212" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-12" value="Resource Access" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="346" y="765" width="175" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-13" value="Provides Credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.03;exitY=1;entryX=0.5;entryY=0.01;rounded=0;" edge="1" parent="1" source="JhH9kgUj6raSh_Qk3-lf-8" target="JhH9kgUj6raSh_Qk3-lf-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="372" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-14" value="Validates Credentials" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1.01;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="JhH9kgUj6raSh_Qk3-lf-9" target="JhH9kgUj6raSh_Qk3-lf-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="JhH9kgUj6raSh_Qk3-lf-10" target="JhH9kgUj6raSh_Qk3-lf-11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-16" value="Checks Permissions" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.21;entryY=0;rounded=0;" edge="1" parent="1" source="JhH9kgUj6raSh_Qk3-lf-11" target="JhH9kgUj6raSh_Qk3-lf-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="729" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JhH9kgUj6raSh_Qk3-lf-17" value="Grants or Denies Access" style="curved=1;startArrow=none;endArrow=block;exitX=0.79;exitY=0;entryX=0.98;entryY=1;rounded=0;" edge="1" parent="1" source="JhH9kgUj6raSh_Qk3-lf-12" target="JhH9kgUj6raSh_Qk3-lf-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="552" y="729" />
+              <mxPoint x="552" y="372" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
