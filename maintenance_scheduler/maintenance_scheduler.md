@@ -4,7 +4,7 @@ The **Maintenance Scheduler** is responsible for **automating maintenance task s
 
 ---
 
-## **1. Core Responsibilities**
+## **Core Responsibilities**
 
 -   **Automated Scheduling** – Generates **maintenance tasks** based on structure conditions.
 -   **Manual Scheduling Support** – Engineers can schedule maintenance tasks.
@@ -13,7 +13,7 @@ The **Maintenance Scheduler** is responsible for **automating maintenance task s
 
 ---
 
-## **2. Maintenance Scheduling Logic**
+## **Maintenance Scheduling Logic**
 
 ### **A. Automated Scheduling (Predictive Maintenance)**
 
@@ -29,7 +29,7 @@ The **Maintenance Scheduler** is responsible for **automating maintenance task s
 
 ---
 
-## **3. Database Schema**
+## **Database Schema**
 
 ### **`maintenance_tasks` Table**
 
@@ -56,7 +56,7 @@ Tracks all **scheduled maintenance activities**.
 
 ---
 
-## **4. Workflow**
+## **Workflow**
 
 ### **A. Automated Maintenance Scheduling**
 
@@ -80,7 +80,7 @@ Tracks all **scheduled maintenance activities**.
 
 ---
 
-## **5. Integration with Notifications**
+## **Integration with Notifications**
 
 | **Event**                | **Trigger**                                 | **Recipient**          |
 | ------------------------ | ------------------------------------------- | ---------------------- |
@@ -91,7 +91,7 @@ Tracks all **scheduled maintenance activities**.
 
 ---
 
-## **6. Performance and Scaling**
+## **Performance and Scaling**
 
 | **Component**              | **Scaling Strategy**                                        |
 | -------------------------- | ----------------------------------------------------------- |
@@ -102,40 +102,15 @@ Tracks all **scheduled maintenance activities**.
 
 ---
 
-## **7. Final Architecture**
-
-```mermaid
-graph TD
-
-    subgraph Reports Database
-        ReportsTable[Reports Table] -->|Scan for Critical Structures| MaintenanceScheduler
-    end
-
-    subgraph Maintenance System
-        MaintenanceScheduler[Maintenance Scheduler] -->|Creates Task| MaintenanceDB[Maintenance Tasks Database]
-        DashboardApp[Dashboard App] -->|Manual Scheduling| MaintenanceDB
-        MaintenanceDB -->|Updates| MaintenanceLogs[Maintenance Logs]
-        MaintenanceDB -->|Triggers| NotificationSystem[Notification System]
-    end
-
-    subgraph Users
-        NotificationSystem -->|Sends Alerts| Engineers
-        Engineers -->|Update Task Status| DashboardApp
-    end
-
-    style MaintenanceScheduler fill:#ff9999,stroke:#333,stroke-width:2px
-    style MaintenanceDB fill:#ffcc00,stroke:#333,stroke-width:2px
-    style NotificationSystem fill:#99ccff,stroke:#333,stroke-width:2px
-    style Engineers fill:#ccffcc,stroke:#333,stroke-width:2px
-```
-
----
-
-## **8. Summary**
+## **Summary**
 
 -   **Automates maintenance scheduling based on structure health.**
 -   **Engineers can manually schedule tasks via the Dashboard App.**
 -   **Notifications keep all stakeholders updated.**
 -   **Optimized indexing for fast retrieval of ongoing and completed tasks.**
 
-Would you like to **define escalation rules for overdue tasks**? 🚀
+## **Diagrams**
+
+Link to draw.io diagram: [Maintenance Scheduler](link here)
+
+![Maintenance Scheduler](maintenance_scheduler.png)
