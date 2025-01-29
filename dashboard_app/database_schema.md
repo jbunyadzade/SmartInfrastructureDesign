@@ -115,6 +115,12 @@ Even though reports are **per structure**, we still track which **sensors** cont
 
 ---
 
+## **6.`notifications` Table**
+
+For tracking **notifications** sent to users about alerts and maintenance updates. For schema details, refer to the [Notifications System description](/notifications/notifications.md).
+
+---
+
 # **Scaling and Performance**
 
 The **Reports Database** is designed to scale efficiently using a **combination of sharding and replication**. Sharding distributes data across multiple database nodes, while replication ensures high availability and read scalability.

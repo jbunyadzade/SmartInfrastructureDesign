@@ -1,22 +1,18 @@
-Here’s the **integrated Notification System description** with the chosen technologies, followed by an **updated diagram** that reflects these choices.
-
----
-
 # **Notification System**
 
-The **Notification System** is responsible for delivering **real-time alerts** and **maintenance updates** to relevant users. It ensures **timely, scalable, and reliable** delivery via multiple channels, prioritizing **critical notifications** while handling large-scale event processing efficiently.
+The **Notification System** is responsible for delivering **real-time alerts** and **maintenance updates** to relevant users. It ensures **timely, scalable, and reliable** delivery via multiple channels while prioritizing **critical notifications**.
 
 ---
 
-## **1. Notification Types and Events**
+## **Notification Types and Events**
 
 The system listens for two major **event categories**, each processed through dedicated queues.
 
 ### **A. Anomaly Alerts (Real-Time Alerts)**
 
-📌 **Source**: **Anomaly Detection System**  
-📌 **Event Queue**: `anomaly_alerts_queue` (RabbitMQ)  
-📌 **Recipients**: **Field Engineers, Supervisors**
+-   **Source**: **Anomaly Detection System**
+-   **Event Queue**: `anomaly_alerts_queue` (RabbitMQ)
+-   **Recipients**: **Field Engineers, Supervisors**
 
 | **Event Type**       | **Trigger Condition**                                       | **Priority** | **Notification Channels**                      |
 | -------------------- | ----------------------------------------------------------- | ------------ | ---------------------------------------------- |
@@ -28,9 +24,9 @@ The system listens for two major **event categories**, each processed through de
 
 ### **B. Maintenance Notifications (Task Updates)**
 
-📌 **Source**: **Maintenance Scheduler**  
-📌 **Event Queue**: `maintenance_notifications_queue` (RabbitMQ)  
-📌 **Recipients**: **Assigned Engineers, Admins**
+-   **Source**: **Maintenance Scheduler**
+-   **Event Queue**: `maintenance_notifications_queue` (RabbitMQ)
+-   **Recipients**: **Assigned Engineers, Admins**
 
 | **Event Type**          | **Trigger Condition**                | **Priority** | **Notification Channels**                      |
 | ----------------------- | ------------------------------------ | ------------ | ---------------------------------------------- |
@@ -42,7 +38,7 @@ The system listens for two major **event categories**, each processed through de
 
 ---
 
-## **2. Message Flow & Processing**
+## **Message Flow & Processing**
 
 The Notification System follows an **event-driven, queue-based** model with **RabbitMQ** for decoupling event producers from consumers.
 
@@ -53,11 +49,11 @@ The Notification System follows an **event-driven, queue-based** model with **Ra
 
 ### **B. Processing Logic**
 
-1️⃣ **Notification Worker fetches events from the queue** (Celery).  
-2️⃣ **Applies filtering and deduplication** to prevent redundant alerts.  
-3️⃣ **Determines recipients** based on event type and urgency.  
-4️⃣ **Formats the message** appropriately for each delivery method.  
-5️⃣ **Sends the notification via the correct channel**.
+1️. **Notification Worker fetches events from the queue** (Celery).  
+2️. **Applies filtering and deduplication** to prevent redundant alerts.  
+3️. **Determines recipients** based on event type and urgency.  
+4️. **Formats the message** appropriately for each delivery method.  
+5️. **Sends the notification via the correct channel**.
 
 ### **C. Message Queues and Workers**
 
@@ -68,11 +64,11 @@ The Notification System follows an **event-driven, queue-based** model with **Ra
 
 ---
 
-## **3. Database Schema**
+## **Database Schema**
 
 ### **`notifications` Table**
 
-Stores all sent notifications for **auditing, tracking, and retry handling**.
+Stores all sent notifications for **auditing, tracking, and retry handling**. Will be part of the [Reports Database](/dashboard_app/database_schema.md).
 
 | Column Name       | Data Type     | Description                                       |
 | ----------------- | ------------- | ------------------------------------------------- |
@@ -84,41 +80,41 @@ Stores all sent notifications for **auditing, tracking, and retry handling**.
 | `status`          | `VARCHAR(20)` | Delivery status (`pending`, `sent`, `failed`).    |
 | `timestamp`       | `TIMESTAMP`   | When the notification was sent.                   |
 
-**Indexes:**
+---
 
--   **Index on `user_id`** for quick lookups.
--   **Index on `event_type`** to filter notifications by category.
--   **Index on `timestamp`** for time-based retrieval.
+## **Performance Considerations**
+
+### **A. Expected Workload and Throughput**
+
+| **Event Type**                | **Expected Frequency**          | **Peak Load Scenario**                                      |
+| ----------------------------- | ------------------------------- | ----------------------------------------------------------- |
+| **Anomaly Alerts**            | **100,000 alerts/day**          | **5,000 alerts/min** during critical incidents.             |
+| **Maintenance Notifications** | **50,000 updates/day**          | **2,500 updates/min** during scheduled maintenance periods. |
+| **Total Notification Events** | **150,000/day (~1.7 TPS avg.)** | **Peak: 7,500 notifications/min (~125 TPS).**               |
+
+### **B. Component Scaling**
+
+| **Component**                | **Capacity**              | **Scaling Strategy**                         |
+| ---------------------------- | ------------------------- | -------------------------------------------- |
+| **RabbitMQ (Queues)**        | **75,000 messages/sec**   | Cluster if traffic > 50,000 msgs/min.        |
+| **Celery Workers**           | **100,000 tasks/sec**     | Auto-scale based on queue backlog.           |
+| **PostgreSQL (DB Logs)**     | **30,000 TPS**            | Add read replicas for high-volume queries.   |
+| **Push Notifications (FCM)** | **10,000 req/sec**        | No changes needed.                           |
+| **SMS (Twilio)**             | **100 req/sec (default)** | Add more sender numbers if rate-limited.     |
+| **Email (SendGrid)**         | **120 emails/sec**        | Use multiple API keys if email volume grows. |
 
 ---
 
-## **4. Retry and Failure Handling**
+## **Summary**
 
-| **Failure Case**     | **Resolution**                                        |
-| -------------------- | ----------------------------------------------------- |
-| **Push/SMS Failure** | Retry **3 times** with exponential backoff.           |
-| **Email Failure**    | Move to **dead-letter queue** and retry after 1 hour. |
-| **Queue Overload**   | Auto-scale Celery workers.                            |
+-   **RabbitMQ handles priority-based message queues.**
+-   **Celery workers process events asynchronously and retry failures.**
+-   **FCM (Push), Twilio (SMS), and SendGrid (Email) ensure reliable delivery.**
+-   **In-App alerts via WebSockets for real-time dashboard updates.**
+-   **Auto-scaling applied to workers, queues, and databases.**
 
----
+## **Diagram**
 
-## **5. Final Technology Stack**
+Link to draw.io diagram: [Notification System Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=notification_system.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fnotification-module%2Fnotifications%2Fnotification_system.drawio)
 
-| **Component**          | **Technology Choice**                 |
-| ---------------------- | ------------------------------------- |
-| **Message Queue**      | RabbitMQ                              |
-| **Database**           | PostgreSQL (indexed for fast lookups) |
-| **Worker Framework**   | Celery (Python)                       |
-| **Push Notifications** | Firebase Cloud Messaging (FCM)        |
-| **SMS Delivery**       | Twilio                                |
-| **Email Service**      | SendGrid                              |
-| **In-App Alerts**      | WebSockets + Redis Pub-Sub            |
-
----
-
-## **6. Summary**
-
-✅ **RabbitMQ handles priority-based message queues.**  
-✅ **Celery workers process events asynchronously and retry failures.**  
-✅ **FCM (Push), Twilio (SMS), and SendGrid (Email) ensure reliable delivery.**  
-✅ **In-App alerts via WebSockets for real-time dashboard updates.**
+![Notification System Diagram](./notification_system.png)
