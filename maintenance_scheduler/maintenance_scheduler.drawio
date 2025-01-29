@@ -1,9 +1,84 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
   <diagram name="Page-1" id="QAvUXSREUKnY27DMxz9T">
-    <mxGraphModel>
+    <mxGraphModel dx="1242" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-1" value="Users" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="629" width="199" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-2" value="Maintenance System" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="239" y="325" width="611" height="561" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-3" value="Reports Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="463" y="20" width="296" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-4" value="Reports Table" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="532" y="45" width="157" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-5" value="Maintenance Scheduler" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="498" y="173" width="226" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-6" value="Maintenance Tasks Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="481" y="350" width="260" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-7" value="Dashboard App" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="613" y="807" width="167" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-8" value="Maintenance Logs" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="274" y="502" width="187" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-9" value="Notification System" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="511" y="502" width="200" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-10" value="Engineers" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="55" y="654" width="129" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-11" value="Scan for Critical Structures" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-4" target="mOBfuGf8kRtm1UOy-Wbp-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-12" value="Creates Task" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-5" target="mOBfuGf8kRtm1UOy-Wbp-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-13" value="Manual Scheduling" style="curved=1;startArrow=none;endArrow=block;exitX=0.62;exitY=-0.01;entryX=0.77;entryY=1;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-7" target="mOBfuGf8kRtm1UOy-Wbp-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="746" y="770" />
+              <mxPoint x="746" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-14" value="Updates" style="curved=1;startArrow=none;endArrow=block;exitX=0.02;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-6" target="mOBfuGf8kRtm1UOy-Wbp-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="367" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-15" value="Triggers" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=-0.01;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-6" target="mOBfuGf8kRtm1UOy-Wbp-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-16" value="Sends Alerts" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=1;entryY=0.37;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-9" target="mOBfuGf8kRtm1UOy-Wbp-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="611" y="629" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mOBfuGf8kRtm1UOy-Wbp-17" value="Update Task Status" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0;entryY=0.01;rounded=0;" edge="1" parent="1" source="mOBfuGf8kRtm1UOy-Wbp-10" target="mOBfuGf8kRtm1UOy-Wbp-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="119" y="733" />
+              <mxPoint x="493" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
