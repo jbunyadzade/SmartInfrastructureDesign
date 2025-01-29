@@ -48,3 +48,11 @@ The **Access Token** is a digitally signed token used for **Authorization**. It 
 - If valid, an **Access Token** is issued.
 - The **Access Token** contains the sensor's identity, permissions, and expiration.
 - Authorization determines if the sensor has permission to access resources.
+
+---
+
+## **Diagram**
+
+Link to draw.io diagram: [Sensor Auth Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=sensor_auth.drawio#R%3Cmxfile%3E%3Cdiagram%20name%3D%22Page-1%22%20id%3D%22mMZeZgjikk1Z3pZBnvqS%22%3E1VjLctowFP0alunIEgZ7mZCUTGc6Q0sfyaqj2jdYxUiMLF75%2BkpYxlbVBDoBQ1e2jq6kq3OOHnaHDGbroaTz7KNIIe9glK475LaDcYBCpB8G2ZRIaEoGmEiW2qAaGLNnqFpadMFSKJxAJUSu2NwFE8E5JMrBqJRi5YY9idwddU4n4AHjhOY%2B%2Bp2lKivRqJqWwe%2BBTbJq5ADZmhmtgi1QZDQVqwZE7jpkIIVQ5dtsPYDckFfxUrZ7%2F0LtLjEJXB3S4EN2H08nX3%2F1JB1nPz5NyVX%2BdBWVvSxpvrATHgMvhLQpq03FwypjCsZzmpjySmvdITeFkmK6o0VP6MbPyaa5BKlg3YBsjkMQM1Byo0NsLYksX9YwOLKGWdX0B6hXYlmD%2BrBrVbeKT3Zd16ToF8vLP3AUexxdL1SmZ8gSqpjgum68KRTMzkcaRl2HtC6KPNJ23bZCWrV%2BG6wNgYOkSq9mjK6TBArz8kWTwc9JnOu2kIQ%2BcQS1SVzgEWfsJiR7vhy3xQ5pPRL7pAW4TdKwR9pnKMRCai5qs51tS%2Bv2HL76Pd9kQT9sky%2Fi8TWSYrk9ajEaSEjN9kZzn7RkIZdgug62bFGprs0pqwEuuI65AZ5WyM9cJFMDrZl60GX0DhFbfLQ96GHkpqwLq%2BJjGWqqpVjwdDscek0Kq%2FTeY06nOwG1f6uH1LkU%2BMJKyPViXLp3hL%2BptG2q%2BaCbRsBcMK6KRs8jAzT8EoSOX0gf%2F6F42WOt%2Fy61N1ii61niG81Zajfs03kibFqilP1FVxzREvGBlqgOstY84SzsYwgbesKeUsGW5Ktk2a9f8L%2Fr1%2FP0G2SQTM2qHIGcsaLQ14KTrkpXUxycTNTgUFHxRW7UfRy3sFH3PT%2Fob%2B9tnsh8uKFb4My5ZB%2FVGP244QzkOiOOms445gFeCb7XGdFFGCMM8WvG2Bv%2FxhNfF%2Bv%2FCmV4%2FXeG3P0G%3C%2Fdiagram%3E%3C%2Fmxfile%3E)
+
+![Sensor Auth Diagram](sensor_auth.png)
