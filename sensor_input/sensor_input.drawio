@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
   <diagram name="Page-1" id="kRa1jRh_TbUVb3UarL87">
     <mxGraphModel dx="1242" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -9,12 +9,6 @@
         </mxCell>
         <mxCell id="MgCkxdkbHL-GaKU8l4sx-4" value="Sensor Input App" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="348" y="327" width="181" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="MgCkxdkbHL-GaKU8l4sx-5" value="Pub/Sub Broker&#xa;(Kafka)" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="355" y="456" width="172" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="MgCkxdkbHL-GaKU8l4sx-6" value="WebSocket Clients" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="346" y="583" width="192" height="54" as="geometry" />
         </mxCell>
         <mxCell id="MgCkxdkbHL-GaKU8l4sx-7" value="Validate Sensor Data" style="whiteSpace=wrap;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="721" y="456" width="207" height="54" as="geometry" />
@@ -44,18 +38,6 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="MgCkxdkbHL-GaKU8l4sx-15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" parent="1" source="MgCkxdkbHL-GaKU8l4sx-3" target="MgCkxdkbHL-GaKU8l4sx-4" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MgCkxdkbHL-GaKU8l4sx-16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.51;exitY=0.99;entryX=0.5;entryY=-0.01;rounded=0;" parent="1" source="MgCkxdkbHL-GaKU8l4sx-4" target="MgCkxdkbHL-GaKU8l4sx-5" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="441" y="406" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="MgCkxdkbHL-GaKU8l4sx-17" value="Subscribe to sensor_id" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=0;rounded=0;" parent="1" source="MgCkxdkbHL-GaKU8l4sx-5" target="MgCkxdkbHL-GaKU8l4sx-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
