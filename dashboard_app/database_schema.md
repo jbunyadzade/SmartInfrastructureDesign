@@ -49,30 +49,7 @@ Stores **processed data** that the **Worker Service** generates from raw sensor 
 
 ---
 
-## **3. `maintenance_logs` (Records Past and Upcoming Repairs)**
-
-Tracks **repair history** for structures rather than sensors.
-
-| Column Name            | Data Type      | Description                                                    |
-| ---------------------- | -------------- | -------------------------------------------------------------- |
-| `log_id`               | `UUID` (PK)    | Unique identifier for the maintenance log.                     |
-| `structure_id`         | `UUID` (FK)    | The structure undergoing maintenance.                          |
-| `region_id`            | `INTEGER`      | Region ID, used for sharding and optimized retrieval.          |
-| `maintenance_type`     | `VARCHAR(100)` | Type of maintenance (`inspection`, `repair`, `reinforcement`). |
-| `performed_by`         | `VARCHAR(100)` | The engineer responsible for the work.                         |
-| `description`          | `TEXT`         | Details of what was done.                                      |
-| `timestamp`            | `TIMESTAMP`    | When the maintenance took place.                               |
-| `next_maintenance_due` | `TIMESTAMP`    | When the next maintenance is scheduled.                        |
-
-**Indexes:**
-
--   **Index on `structure_id`** to track repairs on each structure.
--   **Index on `region_id`** to support sharding.
--   **Index on `next_maintenance_due`** for scheduling upcoming work.
-
----
-
-## **4. `alerts` (Stores Critical Issues for Dashboard Alerts)**
+## **3. `alerts` (Stores Critical Issues for Dashboard Alerts)**
 
 Stores **active alerts** that notify engineers about **critical structural issues**.
 
@@ -94,7 +71,7 @@ Stores **active alerts** that notify engineers about **critical structural issue
 
 ---
 
-## **5. `sensor_metadata` (Metadata Table for Sensors)**
+## **4. `sensor_metadata` (Metadata Table for Sensors)**
 
 Even though reports are **per structure**, we still track which **sensors** contribute to the reports.
 
@@ -115,11 +92,11 @@ Even though reports are **per structure**, we still track which **sensors** cont
 
 ---
 
-## **6.`notifications` Table**
+## **5.`notifications` Table**
 
 For tracking **notifications** sent to users about alerts and maintenance updates. For schema details, refer to the [Notifications System description](/notifications/notifications.md).
 
-## **7. `maintenance_tasks` Table**
+## **6. `maintenance_tasks` Table**
 
 For tracking **scheduled maintenance activities**. For schema details, refer to the [Maintenance Scheduler description](/maintenance_scheduler/maintenance_scheduler.md).
 
