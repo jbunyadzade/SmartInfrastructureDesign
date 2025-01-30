@@ -2,34 +2,40 @@
 
 ## Introduction
 
-Repo containing diagrams and documentation for the smart infrastructure design project.
+Repo containing diagrams and documentation for the Smart Infrastructure Management System project.
 
-## Contributing
+The Smart Infrastructure Management System is a comprehensive solution for monitoring and managing critical infrastructure elements such as bridges, roads, pipelines, and dams. The system leverages IoT sensors, real-time data processing, and predictive analytics to ensure the safety, reliability, and longevity of these structures.
 
-Select a task from the [tasks](tasks.md) list and create a new branch to work on it. When you're done, create a pull request to merge your changes into the `main` branch.
+The requirements document can be found [here](REQUIREMENTS.md).
 
-Notify your team mates which task you're working on to avoid duplication of work.
+## Modules
 
-## Diagrams
+1. [Sensor Input App](sensor_input/sensor_input.md)
+1. [Time-series Database](sensor_input/tsdb_description.md)
+1. [Dashboard App](dashboard_app/dashboard_app.md)
+1. [Maintenance Scheduler](maintenance_scheduler/maintenance_scheduler.md)
+1. [Notification System](notifications/notifications.md)
+1. [Reports Database](dashboard_app/database_schema.md)
+1. [External Authentication Service](oauth2/oauth2.md)
+1. [Sensor Authentication](sensor_auth/sensor_auth.md)
 
-For diagrams use [draw.io](https://app.diagrams.net/) to create them. It's best to export them as `.drawio` files and commit them to the repo. This way, they can be edited later if needed.
+## System Overview
 
-Do not edit existing diagrams without consulting the team first. Conflicting changes can be difficult to resolve. It's best to create a new diagram if you need to make changes.
+In general, the system can be divided into 2 major parts:
 
-## Documentation
+1. Sensor Data Ingestion and Processing
+2. Delivering reports and notifications to relevant stakeholders
 
-For documentation, use Markdown files.
+The Sensor Data enters the system via the [Sensor Input App](sensor_input/sensor_input.md), which is responsible for ingesting and storing the data in the [Time-series DB](/sensor_input/tsdb_description.md). The sensors must go through [Sensor Authentication](sensor_auth/sensor_auth.md) before they can send data to the system.
 
-Here's a Markdown cheat sheet to help you format your text: [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/). It should be pretty straightforward to use and sample files are provided in the repo.
+A fleet of "Data-churning" workers then processes the data, generating reports, maintenance schedules and storing them in the [Reports Database](dashboard_app/database_schema.md). They also proactively analyze the latest incoming data to detect anomalies and, if necessary, send notifications to the users via the [Notification System](notifications/notifications.md).
 
-If you're not familiar with Markdown, you can use [StackEdit](https://stackedit.io/) to write your documentation. It's a web-based Markdown editor that allows you to preview your text as you write it.
+There is also a dedicated [Maintenance scheduler](maintenance_scheduler/maintenance_scheduler.md), which queries the reports from the [Reports Database](dashboard_app/database_schema.md) send notifications to the users via the [Notification System](notifications/notifications.md).
 
-VSCode allows you to preview Markdown files as well. Just open the file and press `Ctrl + Shift + V` to see the preview.
+The [Dashboard App](dashboard_app/dashboard_app.md) is the user-facing part of the API. It queries the [Reports Database](dashboard_app/database_schema.md) to display the latest data and alerts to the users. The users are authenticated via the [External Authentication Service](oauth2/oauth2.md).
 
-## Links
+## Diagram
 
--   [Project's technical description](technical_description.md)
--   [Tasks](tasks.md)
--   [Endpoints](endpoints/README.md)
--   [Breakdown Diagrams](breakdown_diagrams/README.md)
--   [Questions (and answers)](questions.md)
+Link to draw.io diagram: [Smart Infrastructure Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=main.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fmain.drawio)
+
+![Main Diagram](main.png)

@@ -1,104 +1,88 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
   <diagram name="Page-1" id="T7-2kkc5fTMEt4OdFops">
-    <mxGraphModel dx="1183" dy="1157" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1642" dy="1195" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-5" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="545" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-7" value="&lt;div&gt;&lt;b&gt;CDN&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FE app static files&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="140" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="yACf0CrbT-HV-bRWLfDn-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-8" value="&lt;div&gt;&lt;b&gt;Dashboard&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="389" y="173" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-9" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="233" y="565" width="81" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-14" target="Ek_r109Na2GJmbcFJiNA-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-14" value="&lt;div&gt;&lt;b&gt;Load Balancer&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="108" y="565" width="81" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-16" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="243" y="575" width="81" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QX9uLB6ceYBl45-aGuLl-3" value="Metrics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-17" target="QX9uLB6ceYBl45-aGuLl-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-17" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="253" y="585" width="81" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-19" value="&lt;div&gt;Sensors&lt;/div&gt;&lt;div&gt;(1 Million)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-185" y="645" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-20" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="-200" y="555" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Ek_r109Na2GJmbcFJiNA-21" target="Ek_r109Na2GJmbcFJiNA-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-21" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
+          <mxGeometry x="-190" y="565" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-35" value="Read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-27" target="Ek_r109Na2GJmbcFJiNA-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-27" target="Ek_r109Na2GJmbcFJiNA-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-27" value="&lt;div&gt;&lt;b&gt;DB Cluster&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Time-series DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Reliable data recording to avoid data loss is top priority&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=19.59999999999991;" parent="1" vertex="1">
+          <mxGeometry x="570" y="530" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-31" value="&lt;div&gt;Validation and buffer queue&lt;/div&gt;&lt;div&gt;(see sensor input app module&lt;/div&gt;&lt;div&gt;description)&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-17" target="Ek_r109Na2GJmbcFJiNA-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-32" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="810" y="420" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-33" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="820" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startFill=0;dashed=1;dashPattern=8 8;" parent="1" source="Ek_r109Na2GJmbcFJiNA-34" target="Ek_r109Na2GJmbcFJiNA-52" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-11" value="Anomaly alerts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-34" target="Ek_r109Na2GJmbcFJiNA-71">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="105" y="320" as="sourcePoint" />
-            <mxPoint x="185" y="210" as="targetPoint" />
+            <mxPoint x="1060" y="-130" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="105" y="210" />
+              <mxPoint x="1240" y="480" />
+              <mxPoint x="1240" y="-130" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-1" target="Ek_r109Na2GJmbcFJiNA-92">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-1" value="Planner" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="75" y="320" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-5" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="65" y="545" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-7" value="&lt;div&gt;&lt;b&gt;CDN&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FE app static files&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="180" y="170" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-100" value="Directly read for real-time monitoring (dedicated read replica)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-27">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-105">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-8" value="&lt;div&gt;&lt;b&gt;Dashboard&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="389" y="173" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-9" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="368" y="565" width="81" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-14" target="Ek_r109Na2GJmbcFJiNA-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-14" value="&lt;div&gt;&lt;b&gt;Load Balancer&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;(L4?)&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="243" y="565" width="81" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-16" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="378" y="575" width="81" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-17" value="&lt;div&gt;&lt;b&gt;Sensor Input &lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;App&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="388" y="585" width="81" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-19" value="Sensors" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="645" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-20" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="75" y="555" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-21" target="Ek_r109Na2GJmbcFJiNA-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-21" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="85" y="565" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-35" value="Read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-27" target="Ek_r109Na2GJmbcFJiNA-34">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-27" target="Ek_r109Na2GJmbcFJiNA-81">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-27" value="&lt;div&gt;&lt;b&gt;DB Cluster&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Time-series DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Reliable data recording to avoid data loss is top priority&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Own breakdown&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=19.59999999999991;" vertex="1" parent="1">
-          <mxGeometry x="570" y="530" width="160" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-17" target="Ek_r109Na2GJmbcFJiNA-27">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-32" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="810" y="420" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-33" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="820" y="430" width="80" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startFill=0;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-34" target="Ek_r109Na2GJmbcFJiNA-52">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-34">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1050" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-72" value="Anomaly alerts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ek_r109Na2GJmbcFJiNA-69">
-          <mxGeometry x="0.3132" y="-4" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-34" value="&lt;div&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;/div&gt;Data churning" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-34" value="&lt;div&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;/div&gt;Data churning" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="830" y="440" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-36" value="&lt;div&gt;&lt;b&gt;DB Cluster&lt;/b&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;Relational&lt;/div&gt;&lt;div&gt;Store results of data-churning from workers: reports&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Prioritize high availability for reads&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-36" value="&lt;div&gt;&lt;b&gt;DB Cluster&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;Reports DB&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/div&gt;&lt;div&gt;PostgreSQL, relational&lt;br&gt;&lt;/div&gt;&lt;div&gt;Store results of data-churning from workers: reports&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Prioritize high availability for reads&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="740" y="40" width="210" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="861.9999999999995" y="420" as="sourcePoint" />
             <mxPoint x="857" y="280.0000000000002" as="targetPoint" />
@@ -107,114 +91,130 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=172.50000000000003;entryPerimeter=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-36">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=172.50000000000003;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-41" value="Redis Cache" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-41" value="Redis Cache" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="469" y="60" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-41">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Ek_r109Na2GJmbcFJiNA-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-43" target="Ek_r109Na2GJmbcFJiNA-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-43" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-43" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="780" y="-190" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-44" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="zyuR_CKzvgabiratTsRh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-44" target="zyuR_CKzvgabiratTsRh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-44" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="790" y="-180" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-45" value="&lt;div&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;/div&gt;Notifications" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-45" value="&lt;div&gt;&lt;b&gt;Worker&lt;/b&gt;&lt;/div&gt;Notifications" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="800" y="-170" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-46" value="Log alerts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.476;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-45" target="Ek_r109Na2GJmbcFJiNA-36">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-46" value="Log alerts" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.476;entryY=-0.01;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-45" target="Ek_r109Na2GJmbcFJiNA-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-52" value="&lt;h3&gt;&lt;b&gt;&quot;Sysyphus&quot; Worker Fleet&lt;/b&gt;&lt;/h3&gt;&lt;div&gt;The &quot;magic sauce&quot; of the system, always churning data&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Responsible for analyzing the data and providing maintenance predictions, anomaly detection, report generation.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-52" value="&lt;h3&gt;&lt;b&gt;&quot;Sysyphus&quot; Worker Fleet&lt;/b&gt;&lt;/h3&gt;&lt;div&gt;The &quot;magic sauce&quot; of the system, always churning data&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Responsible for analyzing the data and providing maintenance predictions, anomaly detection, report generation.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1000" y="490" width="230" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-71" target="Ek_r109Na2GJmbcFJiNA-45">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1046.75" y="100" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="1047" y="-130" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-71" value="Message queue" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.queue;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="100" width="60" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-74" value="Notification preferences" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-73" target="Ek_r109Na2GJmbcFJiNA-43">
+        <mxCell id="zyuR_CKzvgabiratTsRh-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-71" target="Ek_r109Na2GJmbcFJiNA-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-73" value="User data DB/service?" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="765" y="-390" width="150" height="100" as="geometry" />
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-71" value="Message queue" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.queue;" parent="1" vertex="1">
+          <mxGeometry x="920" y="-160" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-75" value="Redis" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="970" y="-290" width="60" height="80" as="geometry" />
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-73" value="&lt;b&gt;User Data/Policy DB&lt;br&gt;&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="560" y="-330" width="150" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-76" value="Notification pref cache" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-45" target="Ek_r109Na2GJmbcFJiNA-75">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-81" target="Ek_r109Na2GJmbcFJiNA-82" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-81" target="Ek_r109Na2GJmbcFJiNA-82">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-81" value="&lt;b&gt;Worker&lt;/b&gt;&lt;br&gt;&lt;div&gt;Data archiving&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-81" value="&lt;b&gt;Worker&lt;/b&gt;&lt;br&gt;&lt;div&gt;Data archiving&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="609.5" y="800" width="81" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-82" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" vertex="1" parent="1">
-          <mxGeometry x="609" y="960" width="80" height="100" as="geometry" />
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-82" value="Amazon S3" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.s3;" parent="1" vertex="1">
+          <mxGeometry x="610" y="960" width="80" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-86" target="Ek_r109Na2GJmbcFJiNA-92">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-92" target="Ek_r109Na2GJmbcFJiNA-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-86" target="Ek_r109Na2GJmbcFJiNA-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-86" value="Engineer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="85" y="70" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-92" target="Ek_r109Na2GJmbcFJiNA-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-92" value="&lt;b&gt;Load Balancer&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-92" value="&lt;b&gt;Load Balancer&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
           <mxGeometry x="389" y="310" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-95" target="Ek_r109Na2GJmbcFJiNA-92">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;startFill=0;dashed=1;dashPattern=8 8;" parent="1" source="Ek_r109Na2GJmbcFJiNA-98" target="Ek_r109Na2GJmbcFJiNA-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="370" />
+              <mxPoint x="380" y="73" />
+              <mxPoint x="380" y="193" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-95" target="Ek_r109Na2GJmbcFJiNA-7">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-98" value="&lt;div&gt;Serves different dashboards based on user role&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ex. Admin will be able to manage Engineers and Planners, set permissions, create/delete/update users&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Planner will see a dashboard with reports on structural integrity etc. over time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Engineer will be able to view reports and&lt;/div&gt;&lt;div&gt;track maintenance tasks&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="140" y="-27" width="229.5" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-95" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="75" y="420" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;startFill=0;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-98" target="Ek_r109Na2GJmbcFJiNA-8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="630" y="193" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-98" value="&lt;div&gt;Serves different dashboards based on user role&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;ex. Admin will be able to manage Engineers and Planners, set permissions, create/delete/update users&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Planner will see a dashboard with reports on structural integrity etc. over time&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Engineer will be able to monitor sensors in real-time&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="510.5" y="-140" width="229.5" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-105" value="" style="shape=orEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="70" width="36" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-106" value="Websocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="298" y="115" width="80" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Ek_r109Na2GJmbcFJiNA-105" target="Ek_r109Na2GJmbcFJiNA-86">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_r109Na2GJmbcFJiNA-117" value="&lt;div&gt;Run on a CRON job&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Every N days - create a compressed dump of entries more than N days old and upload to S3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Delete the archived entries from DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;N is to be determined by the client based on the engineering requirements and data retention policy&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Ek_r109Na2GJmbcFJiNA-117" value="&lt;div&gt;Run on a CRON job&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Every N days - create a compressed dump of entries more than N days old and upload to S3&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Delete the archived entries from DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;N is to be determined by the client based on the engineering requirements and data retention policy&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="750" y="800" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Sgh43r2_wWoXZTdD6Gii-1" value="&lt;b&gt;External Auth Service (OAuth2)&lt;/b&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="-350" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Sgh43r2_wWoXZTdD6Gii-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Ek_r109Na2GJmbcFJiNA-73" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="469" y="-280" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QX9uLB6ceYBl45-aGuLl-2" value="&lt;div&gt;Prometheus&lt;/div&gt;&lt;div&gt;(see monitoring module)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="233.5" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endArrow=none;startFill=0;dashPattern=8 8;" edge="1" parent="1" source="yACf0CrbT-HV-bRWLfDn-2" target="Ek_r109Na2GJmbcFJiNA-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-2" value="&lt;div&gt;The Load Balancer can support up to 1 million active&lt;/div&gt;&lt;div&gt;connections simultaneously - so just 1 LB is enough&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="-80" y="700" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yACf0CrbT-HV-bRWLfDn-4" target="Ek_r109Na2GJmbcFJiNA-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="yACf0CrbT-HV-bRWLfDn-4" target="Ek_r109Na2GJmbcFJiNA-92" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-4" value="&lt;div&gt;User&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Sgh43r2_wWoXZTdD6Gii-1" target="yACf0CrbT-HV-bRWLfDn-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-43" target="Ek_r109Na2GJmbcFJiNA-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Ek_r109Na2GJmbcFJiNA-8" target="Sgh43r2_wWoXZTdD6Gii-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yACf0CrbT-HV-bRWLfDn-11" value="&lt;b&gt;Policy server&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="389" y="-320" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-12" value="&lt;div&gt;Maintenance alerts&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="zyuR_CKzvgabiratTsRh-2" target="Ek_r109Na2GJmbcFJiNA-71">
+          <mxGeometry x="-0.45" y="10" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="-130" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-2" value="&lt;b&gt;Maintenance Scheduler&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1090" y="120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-3" value="&lt;div&gt;Query &lt;br&gt;&lt;/div&gt;&lt;div&gt;maintenance_tasks&lt;/div&gt;&lt;div&gt;&amp;nbsp;table once a day&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zyuR_CKzvgabiratTsRh-2" target="Ek_r109Na2GJmbcFJiNA-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-6" value="&lt;b&gt;Delivery Channels&lt;/b&gt;" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-170" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zyuR_CKzvgabiratTsRh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zyuR_CKzvgabiratTsRh-6" target="yACf0CrbT-HV-bRWLfDn-4">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
