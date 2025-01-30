@@ -8,7 +8,7 @@ The **Dashboard App** does not interact directly with sensors but instead relies
 
 ## **Diagram**
 
-Link to draw.io diagram: [Dashboard App Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=dashboard_app.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fdashboard-app%2Fdashboard_app%2Fdashboard_app.drawio)
+Link to draw.io diagram: [Dashboard App Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=dashboard_app.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fdashboard_app%2Fdashboard_app.drawio)
 
 ![Dashboard App Diagram](dashboard_app.png)
 

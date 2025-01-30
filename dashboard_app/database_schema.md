@@ -166,6 +166,6 @@ Each **shard has 3 replicas**:
 
 ## **Diagram**
 
-Link to draw.io diagram: [Reports Database Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=reports_db_diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fdashboard-app%2Fdashboard_app%2Freports_db_diagram.drawio)
+Link to draw.io diagram: [Reports Database Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=reports_db_diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fdashboard_app%2Freports_db_diagram.drawio)
 
 ![Reports Database Diagram](./reports_db_diagram.png)

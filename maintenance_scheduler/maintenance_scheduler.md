@@ -111,6 +111,6 @@ Tracks all **scheduled maintenance activities**.
 
 ## **Diagrams**
 
-Link to draw.io diagram: [Maintenance Scheduler](link here)
+Link to draw.io diagram: [Maintenance Scheduler](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=maintenance_scheduler.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fmaintenance_scheduler%2Fmaintenance_scheduler.drawio)
 
 ![Maintenance Scheduler](maintenance_scheduler.png)

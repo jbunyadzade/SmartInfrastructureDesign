@@ -69,6 +69,6 @@ The workers operate in a **scheduled, pull-based** manner, periodically querying
 
 ## **Diagram**
 
-Link to draw.io diagram: [Data Churning Workers]()
+Link to draw.io diagram: [Data Churning Workers](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=data_churners_diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fdata_churner_fleet%2Fdata_churners_diagram.drawio)
 
 ![Data Churning Workers](data_churners_diagram.png)

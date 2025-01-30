@@ -115,6 +115,6 @@ Stores all sent notifications for **auditing, tracking, and retry handling**. Wi
 
 ## **Diagram**
 
-Link to draw.io diagram: [Notification System Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=notification_system.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fnotification-module%2Fnotifications%2Fnotification_system.drawio)
+Link to draw.io diagram: [Notification System Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=notification_system.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Fnotifications%2Fnotification_system.drawio)
 
 ![Notification System Diagram](./notification_system.png)

@@ -107,6 +107,9 @@ This endpoint establishes a WebSocket connection for real-time monitoring of a s
 
 ## **Diagrams**
 
+Link to draw.io diagram: [Sensor Input App Architecture](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=oauth2.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjbunyadzade%2FSmartInfrastructureDesign%2Fmain%2Foauth2%2Foauth2.drawio)
+![Sensor Input App Architecture](sensor_input.png)
+
 ---
 
 ## **Monitoring and Metrics**
